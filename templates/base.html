@@ -5,158 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/static/css/app.css">
-  <title>MDTX - {% block title %}{% endblock %}</title>
+  <title>Trainingsdeck {% block title %}{% endblock %}</title>
   {% endblock %}
 </head>
 <body>
   <div class="wrapper">
-    {% include "inc/_header.html" %}
-    <div class="slides-wrapper">{% block content %}{% endblock %}</div>
+    <header>
+      <nav>
+        <ul>
+          <li class="active"><a href="#">Home</a>
+            <ul class="submenu">
+              <li><a href="#">Submenu 1</a></li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">angebot</a></li>
+          <li><a href="#">team </a></li>
+          <li><a href="#">konzept</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <strong class="logo"><a href="#">Trainingsdeck</a></strong>
+    </header>
+    <div class="content">
+      <div class="gallery">
+        <img src="/static/images/img-1.gif" alt="">
+        <div class="text-holder">
+          <h2>TrainingsDeck</h2>
+          <em>Eröffnung am 01. August!</em>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="title-post">
+        <h2>STUDIOERÖFFNUNG</h2>
+        <div class="text-holder">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        </div>
+      </div>
+      <div class="box-holder">
+        <div class="holder">
+          <div class="box">
+            <div class="heading">
+              <h2>Beispiel 01</h2>
+            </div>
+            <a href="#"><img src="/static/images/img-2.gif" alt=""></a>
+          </div>
+          <div class="box">
+            <div class="heading">
+              <h2>Beispiel 02</h2>
+            </div>
+            <a href="#"><img src="/static/images/img-3.gif" alt=""></a>
+          </div>
+          <div class="box">
+            <div class="heading">
+              <h2>Beispiel 03</h2>
+            </div>
+            <a href="#"><img src="/static/images/img-4.gif" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script type="text/javascript" src="/static/js/vendor.js"></script>
-  <script type="text/javascript">
-  	$(document).ready(function(){
-        $('.language-select').hover(
-            function() {
-                $(this).addClass('hover');
-            },
-            function() {
-                $(this).removeClass('hover');
-            }
-        );
-
-        $('.slide').on('click', '.slide__info-block__info-btn', function(){
-            $(this).closest('.slide__info-block').toggleClass('active');
-        });
-
-        var slideAnimations = {
-            start_slide_1: 0,
-            end_slide_1:   2000,
-
-            start_slide_2: 2000,
-            end_slide_2:   3000,
-            start_slide_2_text_in:  0,
-            end_slide_2_text_in:    1700,
-            start_slide_2_text_out: 1700,
-            end_slide_2_text_out:   2150,
-
-            slide_2_text_in_step_1: 1400,
-            slide_2_text_in_step_2: 1250,
-            slide_2_text_in_step_3: 1100,
-            slide_2_text_in_step_4: 950,
-            slide_2_text_in_step_5: 800,
-            slide_2_text_in_step_6: 650,
-
-            slide_2_text_out_step_1: 2900,
-            slide_2_text_out_step_2: 2750,
-            slide_2_text_out_step_3: 2600,
-            slide_2_text_out_step_4: 2450,
-            slide_2_text_out_step_5: 2300,
-            slide_2_text_out_step_6: 2150,
-            slide_2_text_out_step_7: 2000,
-
-            start_slide_3: 4500,
-            end_slide_3:   5500,
-            start_slide_3_animations: 3000,
-            end_slide_3_animations:   4000,
-
-            start_slide_4: 6300,
-            end_slide_4:   7300,
-            start_slide_4_animations: 4900,
-            end_slide_4_animations:   5900,
-
-            start_slide_5: 8000,
-            end_slide_5:   9000,
-            start_slide_5_animations: 6700,
-            end_slide_5_animations:   7700,
-
-            start_slide_6: 9700,
-            end_slide_6:   10700,
-            start_slide_6_animations: 8400,
-            end_slide_6_animations:   9400,
-
-            start_slide_7: 11400,
-            end_slide_7:   12400,
-            start_slide_7_animations: 10100,
-            end_slide_7_animations:   11100,
-
-            start_slide_8: 15300,
-            end_slide_8:   16300,
-            start_slide_8_animations: 11800,
-            end_slide_8_animations:   12800,
-            start_slide_8_items_animations: 13200,
-            step_2_slide_8_items_animations:   14200,
-            step_3_slide_8_items_animations:   14700,
-            end_slide_8_items_animations:   15200,
-
-            start_slide_9: 16700,
-            end_slide_9:   17700,
-            start_slide_9_animations: 15300,
-            end_slide_9_animations:   16300,
-
-            start_slide_10: 18100,
-            end_slide_10:   19100,
-            slide_10_text_out_step_1: 19100,
-            slide_10_text_out_step_2: 18950,
-            slide_10_text_out_step_3: 18800,
-            slide_10_text_out_step_4: 18650,
-            slide_10_text_out_step_5: 18500,
-            slide_10_text_out_step_6: 18350,
-
-            start_slide_11: 21100,
-            end_slide_11:   22100,
-            start_slide_11_animations: 19700,
-            end_slide_11_animations:   20700,
-
-            start_slide_12: 22100,
-            end_slide_12:   23100,
-            start_slide_12_animations: 21000,
-            end_slide_12_animations:   23100,
-        }
-
-        $('.slides-wrapper').queryLoader2({
-            percentage: true,
-            backgroundColor: "none",
-            barHeight: 0,
-            minimumTime: 30000,
-            onComplete: function() {
-                $('#slide--1 .content-holder').removeClass('hidden');
-
-                var mdtxScroll = skrollr.init({
-                    forceHeight: true,
-                    mobileCheck: false,
-                    constants: slideAnimations
-                    // mobileCheck: function() {return false;}
-                });
-
-                $('.scroll-to-next').click(function(event) {
-                    event.preventDefault();
-                    // make animation to next slide
-                    mdtxScroll.animateTo(slideAnimations[$(this).data("next-slide-position")] - 10);
-                });
-            }
-        });
-
-
-
-
-
-        // document.addEventListener('touchmove', function(e) {
-        //     e.preventDefault();
-        //     console.log(e);
-        // }, false);
-
-        // document.addEventListener('mousewheel', function(e) {
-        //     // e.preventDefault();
-        //     console.log($(window).scrollTop());
-        // }, false);
-
-        // mdtxScroll.off('touchmove');
-
-
-    });
-
-  </script>
 </body>
 </html>
