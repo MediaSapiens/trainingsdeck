@@ -111,7 +111,7 @@ button::-moz-focus-inner,
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\000031}}
 body {
   background: #ececec;
-  font: 12px Arial, Helvetica, sans-serif; }
+  font: 12px Calibri, Arial, Helvetica, sans-serif; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\000036}}
 .wrapper {
@@ -159,17 +159,17 @@ header {
     height: 100%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000352}}
-nav {
+.nav {
   float: right; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000355}}
-  nav > ul {
+  .nav > ul {
     float: left;
     margin: 0;
     padding: 0;
     list-style: none;
     position: relative; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000362}}
-    nav > ul > li {
+    .nav > ul > li {
       float: left;
       text-transform: uppercase;
       text-align: center;
@@ -179,22 +179,22 @@ nav {
       min-width: 97px;
       padding: 36px 0 4px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000371}}
-      nav > ul > li:last-child {
+      .nav > ul > li:last-child {
         margin: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000375}}
-      nav > ul > li.active, nav > ul > li:hover {
+      .nav > ul > li.active, .nav > ul > li:hover {
         background: #20912e; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000377}}
-        nav > ul > li.active a, nav > ul > li:hover a {
+        .nav > ul > li.active a, .nav > ul > li:hover a {
           background: #20912e; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000379}}
-          nav > ul > li.active a:after, nav > ul > li:hover a:after {
+          .nav > ul > li.active a:after, .nav > ul > li:hover a:after {
             display: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000384}}
-        nav > ul > li.active:hover .submenu, nav > ul > li:hover:hover .submenu {
+        .nav > ul > li.active:hover .submenu, .nav > ul > li:hover:hover .submenu {
           left: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000390}}
-      nav > ul > li > a {
+      .nav > ul > li > a {
         display: inline-block;
         box-sizing: border-box;
         vertical-align: middle;
@@ -205,7 +205,7 @@ nav {
         color: #fff;
         text-decoration: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003100}}
-        nav > ul > li > a:after {
+        .nav > ul > li > a:after {
           content: '';
           position: absolute;
           left: -2px;
@@ -214,7 +214,7 @@ nav {
           height: 100%;
           background: #b1b3b4; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003111}}
-    nav > ul .submenu {
+    .nav > ul .submenu {
       position: absolute;
       top: 100%;
       left: -9999px;
@@ -229,15 +229,15 @@ nav {
       line-height: 16px;
       box-sizing: border-box; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003125}}
-      nav > ul .submenu li {
+      .nav > ul .submenu li {
         float: left;
         margin: 0 5px 18px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003129}}
-      nav > ul .submenu a {
+      .nav > ul .submenu a {
         color: #fff;
         text-decoration: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003132}}
-        nav > ul .submenu a:hover {
+        .nav > ul .submenu a:hover {
           text-decoration: underline; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003139}}
@@ -251,7 +251,9 @@ nav {
     display: block; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003147}}
   .gallery .text-holder {
-    width: 228px;
+    width: 232px;
+    padding: 18px 20px 0;
+    box-sizing: border-box;
     right: 0;
     top: 0;
     position: absolute;
@@ -262,28 +264,30 @@ nav {
     color: #9c9e9f;
     font-size: 14px;
     line-height: 17px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003163}}
   .gallery h2 {
     font-size: 14px;
     line-height: 18px;
     margin: 0;
     color: #58585a; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003168}}
-  .gallery em {
-    color: #58585a; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003170}}
+  .gallery em {
+    color: #58585a;
+    display: block;
+    margin: 0 0 17px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003176}}
   .gallery p {
     margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003178}}
 .content {
   padding: 0 40px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003180}}
 .title-post {
   overflow: hidden;
-  margin: 0 0 26px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003178}}
+  margin: 0 0 46px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003184}}
   .title-post h2 {
     float: left;
     text-transform: uppercase;
@@ -291,7 +295,7 @@ nav {
     font-size: 14px;
     line-height: 18px;
     margin: 0 20px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003192}}
   .title-post .text-holder {
     overflow: hidden;
     font-size: 14px;
@@ -300,31 +304,85 @@ nav {
     position: relative;
     padding: 0 0 0 21px;
     border-left: 1px solid #b1b3b4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003201}}
   .title-post p {
     margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003205}}
 .box-holder {
   overflow: hidden;
   padding: 0 0 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003208}}
   .box-holder .holder {
     width: 880px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003211}}
+  .box-holder .heading {
+    margin: 0 0 16px;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003214}}
+    .box-holder .heading:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: #ececec;
+      left: 0;
+      bottom: 9px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003224}}
   .box-holder .box {
     float: left;
     width: 239px;
     margin: 0 52px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003229}}
   .box-holder h2 {
     font-size: 14px;
     line-height: 18px;
     color: #b1b3b4;
     text-transform: uppercase;
     margin: 0;
-    font-weight: normal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003218}}
+    padding: 0 12px 0 0;
+    font-weight: normal;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003243}}
   .box-holder img {
     display: block;
     border: 6px solid #b1b3b4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003248}}
+footer {
+  width: 823px;
+  margin: 0 auto;
+  color: #87888a;
+  text-transform: uppercase;
+  padding: 19px 38px 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003254}}
+  footer p {
+    float: right;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003258}}
+  footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003262}}
+    footer nav ul li {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 3px 0 6px;
+      background: url('/static/images/separator.gif?1372420078') no-repeat 0 0;
+      text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003268}}
+      footer nav ul li:first-child {
+        background: none;
+        padding-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003272}}
+      footer nav ul li a {
+        color: #87888a;
+        text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003275}}
+        footer nav ul li a:hover {
+          text-decoration: underline; }
