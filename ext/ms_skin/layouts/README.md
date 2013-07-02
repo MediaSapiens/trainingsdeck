@@ -17,12 +17,20 @@ Compile scss
 sass and compass
 ----------
 	
-для работы нужен sass и compass
+for compiling install sass and compass
 	
 	gem install sass 
 	gem install compass
 
-файл с настройками compass 
+file for compass configurations
 	
 	config.rb
 
+local dev server
+----------
+
+just start with php 5.4x in root of layout folder:
+
+	php -S localhost:9000
+
+open in Browser: http://localhost:9000
