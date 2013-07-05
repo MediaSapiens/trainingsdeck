@@ -161,7 +161,7 @@ header {
   margin: 29px 0 0;
   display: block;
   float: left;
-  background: url('/static/images/logo.png?1373033442'); }
+  background: url('../images/logo.png?1373033442'); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/ext\/ms_skin\/layouts\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\0000348}}
   .logo a {
     display: block;
@@ -405,7 +405,7 @@ header {
       display: inline-block;
       vertical-align: top;
       padding: 0 3px 0 6px;
-      background: url('/static/images/separator.gif?1373033442') no-repeat 0 0;
+      background: url('../images/separator.gif?1373033442') no-repeat 0 0;
       text-transform: uppercase; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/ext\/ms_skin\/layouts\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003305}}
       .footer nav ul li:first-child {
