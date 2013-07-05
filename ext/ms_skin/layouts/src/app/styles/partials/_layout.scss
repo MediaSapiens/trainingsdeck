@@ -1,6 +1,7 @@
 body{
   background: #ececec;
   font: 12px Calibri, Arial, Helvetica, sans-serif;
+  color: #87888a;
 }
 
 .wrapper{
@@ -282,6 +283,10 @@ header{
 
   a{
     color: #b1b3b4;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   p{
@@ -396,5 +401,13 @@ header{
   }
 }
 .csc-textpic{
+  padding: 0 0 20px;
 
+  csc-textpic-imagewrap{
+    margin: 0 20px 0 0;
+    font-size: 13px;
+    line-height: 17px;
+    color: #87888a;
+
+  }
 }
