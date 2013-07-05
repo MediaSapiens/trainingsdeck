@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-07-04T15:25:35Z" product-name="ms_infobox">
+    <header/>
+    <body>
+
+      <trans-unit id="flexfForm.Settings">
+        <source>Settings</source>
+      </trans-unit>
+
+      <trans-unit id="flexfForm.Items">
+        <source>Select Items</source>
+      </trans-unit>
+
+      <trans-unit id="tx_msinfobox_domain_model_infobox">
+        <source>Info Box</source>
+      </trans-unit>
+      <trans-unit id="tx_msinfobox_domain_model_infobox.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_msinfobox_domain_model_infobox.image">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="tx_msinfobox_domain_model_infobox.description">
+        <source>Description</source>
+      </trans-unit>
+      <trans-unit id="tx_msinfobox_domain_model_infobox.link">
+        <source>Link</source>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>

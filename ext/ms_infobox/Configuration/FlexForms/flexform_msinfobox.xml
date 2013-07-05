@@ -1,0 +1,47 @@
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+  </meta>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:ms_infobox/Resources/Private/Language/locallang_db.xlf:flexfForm.Settings</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+
+          <settings.itemsUIDs>
+            <TCEforms>
+              <label>LLL:EXT:ms_infobox/Resources/Private/Language/locallang_db.xlf:flexfForm.Items</label>
+              <config>
+                <type>group</type>
+                <internal_type>db</internal_type>
+                <allowed>tx_msinfobox_domain_model_infobox</allowed>
+                <prepand_tname>0</prepand_tname>
+                <multiple>1</multiple>
+                <minitems>1</minitems>
+                <maxitems>99</maxitems>
+                <size>3</size>
+              </config>
+            </TCEforms>
+          </settings.itemsUIDs><!--
+          <switchableControllerActions>
+            <TCEforms>
+              <label>Select function</label>
+              <config>
+                <type>select</type>
+                <items>
+                  <numIndex index="0">
+                    <numIndex index="0">Admin</numIndex>
+                    <numIndex index="1">InfoBox->list</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </switchableControllerActions>-->
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>

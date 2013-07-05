@@ -4,7 +4,7 @@
   {% block head %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/static/css/app.css">
+  <link rel="stylesheet" href="{{baseUrl}}static/css/app.css">
   <title>Trainingsdeck {% block title %}{% endblock %}</title>
   {% endblock %}
 </head>
@@ -51,6 +51,6 @@
     </nav>
   </div>
 
-  <script type="text/javascript" src="/static/js/vendor.js"></script>
+  <script type="text/javascript" src="{{baseUrl}}static/js/vendor.js"></script>
 </body>
 </html>

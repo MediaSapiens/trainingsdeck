@@ -1,0 +1,3 @@
+page.includeJSFooter {
+   vendor = {$skin_path}layouts/static/js/vendor.js
+}

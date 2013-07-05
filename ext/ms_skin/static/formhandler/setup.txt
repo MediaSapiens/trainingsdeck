@@ -1,0 +1,97 @@
+plugin.Tx_Formhandler.settings.predef.contactForm {
+
+ saveInterceptors {
+  1.class = Interceptor_CombineFields
+  1.config {
+    combineFields {
+      userToName {
+        fields {
+          1 = vorname_1
+          2 = nachname_1
+          3 = vorname_2
+          4 = nachname_2
+          5 = vorname_3
+          6 = nachname_3
+        }
+        separator = ,
+        hideEmptyValues = 1
+      }
+    }
+  }
+ }
+
+  validators.1 {
+    #class = Tx_Formhandler_Validator_Default
+    class = Validator_Default
+    config {
+      fieldConf {
+        firstname.errorCheck.1 = required
+        lastname.errorCheck.1 = required
+        email.errorCheck.1 = required
+        email.errorCheck.2 = email
+        message.errorCheck.1 = required
+
+        freecapfield.errorCheck.1 = required
+        freecapfield.errorCheck.1 = captcha
+      }
+    }
+  }
+
+
+
+
+  # Common configuration
+  #templateFile = {$plugin.Tx_Formhandler.contactForm.mailTemplateFile}
+  templateFile = {$plugin.Tx_Formhandler.contactForm.templateFile}
+  formValuesPrefix = {$plugin.Tx_Formhandler.contactForm.formValuesPrefix}
+  name = {$plugin.Tx_Formhandler.contactForm.predefName}
+  debug = {$plugin.Tx_Formhandler.contactForm.debug}
+  addErrorAnchors = 0
+  langFile.1 = {$plugin.Tx_Formhandler.contactForm.langFile1}
+
+  # Finishers configuration
+  finishers {
+    ##send emails
+    10.class = Tx_Formhandler_Finisher_Mail
+    10.config {
+      returns = 0
+      admin {
+        subject = TEXT
+        subject.data = LLL:typo3conf/ext/ms_skin/static/formhandler/lang.xml:emailSubject
+
+        to_email = {$plugin.Tx_Formhandler.contactForm.admin.to_email}
+        to_name = {$plugin.Tx_Formhandler.contactForm.admin.to_name}
+
+        sender_email = {$plugin.Tx_Formhandler.contactForm.sender_email}
+        sender_name = {$plugin.Tx_Formhandler.contactForm.sender_name}
+
+        replyto_email = {$plugin.Tx_Formhandler.contactForm.replyto_email}
+        replyto_name = {$plugin.Tx_Formhandler.contactForm.replyto_name}
+      }
+      user {
+        subject = TEXT
+        subject.data = LLL:typo3conf/ext/ms_skin/static/formhandler/lang.xml:emailSubject
+
+        replyto_email = {$plugin.Tx_Formhandler.contactForm.replyto_email}
+        replyto_name = {$plugin.Tx_Formhandler.contactForm.replyto_name}
+
+        sender_email = {$plugin.Tx_Formhandler.contactForm.sender_email}
+        sender_name = {$plugin.Tx_Formhandler.contactForm.sender_name}
+
+        to_email = email
+        to_name =  userToName
+      }
+    }
+
+    #do not redirect
+    /*
+    30.class = Tx_Formhandler_Finisher_SubmittedOK
+    30.config {
+      returns = 1
+    }
+    */
+
+    50.class = Tx_Formhandler_Finisher_Redirect
+  }
+
+}

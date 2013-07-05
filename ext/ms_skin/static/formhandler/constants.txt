@@ -1,0 +1,25 @@
+plugin.Tx_Formhandler.contactForm {
+  debug = 0
+  predefName = Contact Form
+  formValuesPrefix = fh
+  templateFile = {$skin_path}static/formhandler/contact_form.html
+  mailTemplateFile = {$skin_path}static/formhandler/contact_form_email.html
+  langFile1 = {$skin_path}static/formhandler/lang.xml
+
+  ### Emails ####
+  replyto_email = no-reply@trainingsdeck.de
+  replyto_name = trainingsdeck.de
+
+  sender_email = no-reply@trainingsdeck.de
+  sender_name = trainingsdeck.de
+
+  admin.to_email = info@trainingsdeck.de
+  admin.to_name = trainingsdeck.de
+}
+
+[globalString = IENV:HTTP_HOST = sf]
+plugin.Tx_Formhandler.contactForm {
+  admin.cc_email = igor.novoseltsev@mediasapiens.com
+  admin.cc_name = dev cc
+}
+[end]

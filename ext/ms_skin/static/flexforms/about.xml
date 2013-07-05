@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+  <ROOT type="array">
+    <type>array</type>
+    <el type="array">
+      <code>
+        <TCEforms>
+          <label>Type</label>
+          <onChange>reload</onChange>
+          <config>
+            <type>select</type>
+            <items>
+              <numIndex index="0">
+                <numIndex index="0">Title/Content(RTE)</numIndex>
+                <numIndex index="1">withTitle</numIndex>
+              </numIndex>
+              <numIndex index="1">
+                <numIndex index="0">Content(RTE)/Content(RTE)</numIndex>
+                <numIndex index="1">contentRTE2sides</numIndex>
+              </numIndex>
+            </items>
+            <default>withTitle</default>
+          </config>
+        </TCEforms>
+      </code>
+
+      <title type="array">
+        <TCEforms type="array">
+          <label>Title</label>
+          <displayCond>FIELD:code:IN:withTitle</displayCond>
+          <config type="array">
+            <type>input</type>
+            <size>48</size>
+            <eval>trim</eval>
+          </config>
+        </TCEforms>
+      </title>
+
+      <contentLeft type="array">
+        <TCEforms type="array">
+          <label>Left Side Content</label>
+          <displayCond>FIELD:code:IN:contentRTE2sides</displayCond>
+          <config type="array">
+            <type>text</type>
+            <cols>40</cols>
+            <rows>10</rows>
+            <wrap>off</wrap>
+          </config>
+          <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
+        </TCEforms>
+      </contentLeft>
+
+      <content type="array">
+        <TCEforms type="array">
+          <label>Main Content</label>
+          <config type="array">
+            <type>text</type>
+            <cols>40</cols>
+            <rows>10</rows>
+            <wrap>off</wrap>
+          </config>
+          <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
+        </TCEforms>
+      </content>
+    </el>
+  </ROOT>
+</T3DataStructure>

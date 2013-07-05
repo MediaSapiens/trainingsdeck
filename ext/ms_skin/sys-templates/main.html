@@ -1,0 +1,26 @@
+<f:comment>
+  Main Template
+</f:comment>
+<div class="wrapper">
+
+  <header>
+    <nav class="nav">
+      <f:cObject typoscriptObjectPath="lib.mainNavi" />
+    </nav>
+    <strong class="logo">
+      <f:cObject typoscriptObjectPath="lib.logo" />
+    </strong>
+  </header><!-- / b-header -->
+
+  <div class="content">
+    <f:cObject typoscriptObjectPath="lib.field_content" />
+  </div>
+
+</div><!--/ .l-wrapper -->
+
+<div class="footer">
+  <p><f:cObject typoscriptObjectPath="lib.menuList" /></p>
+  <nav>
+    <f:cObject typoscriptObjectPath="lib.footerNavi" />
+  </nav>
+</div><!-- / b-footer -->

@@ -34,12 +34,20 @@ page.10 {
     key.override.field = backend_layout
     # default template file
     default = TEXT
-    default.value = {$skin_path}sys-templates/1col.html
-    # template file for backend-layout with ID 2
-    2 = TEXT
-    2.value = {$skin_path}sys-templates/2col.html
+    default.value = {$skin_path}sys-templates/main.html
+    #default.value = {$skin_path}sys-templates/1col.html
+
+    # template file for backend-layout with ID 4
+    4 = TEXT
+    4.value = {$skin_path}sys-templates/1col.html
   }
 }
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/libs/headerdata.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/libs/footerdata.txt">
 
+
+#formhandler
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/formhandler/setup.txt">
+#realUrl
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/realurl/setup.txt">

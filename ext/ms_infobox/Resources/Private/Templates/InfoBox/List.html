@@ -1,0 +1,40 @@
+<f:comment>
+{namespace hotelHelper=ms\MsInfobox\ViewHelpers}
+</f:comment>
+
+<f:layout name="Default" />
+<f:section name="main">
+<f:flashMessages />
+
+
+  <f:for each="{infoBoxes}" as="infoBox">
+    <div class="box">
+      <div class="heading">
+        <a href="<a href="<hotelHelper:linkWrapper
+          TYPO3Link="{infoBox.link}"
+          arguments="{isLinkUrl:'true',  linkTitle:'{infoBox.title}'}"
+          />"><h2>{infoBox.title}</h2></a>
+      </div>
+      <a href="<hotelHelper:linkWrapper
+      TYPO3Link="{infoBox.link}"
+      arguments="{isLinkUrl:'true',  linkTitle:'{infoBox.title}'}"
+      />"><f:image src="uploads/tx_msinfobox/{infoBox.image}" width="238" maxWidth="238" maxHeight="238" alt="{infoBox.title}" title="{infoBox.title}" /></a>
+      <div class="description"><a href="<hotelHelper:linkWrapper
+      TYPO3Link="{infoBox.link}"
+        arguments="{isLinkUrl:'true',  linkTitle:'{infoBox.title}'}"
+        />"><f:format.html>{infoBox.description}</f:format.html></a></div>
+    </div>
+
+
+
+    <!--<tr>
+      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> </f:link.action></td>
+      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> {infoBox.image}</f:link.action></td>
+      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> {infoBox.description}</f:link.action></td>
+      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> {infoBox.link}</f:link.action></td>
+      <td><f:link.action action="edit" arguments="{infoBox : infoBox}">Edit</f:link.action></td>
+      <td><f:link.action action="delete" arguments="{infoBox : infoBox}">Delete</f:link.action></td>
+    </tr>-->
+  </f:for>
+
+</f:section>

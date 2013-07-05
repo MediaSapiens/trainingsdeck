@@ -2,16 +2,22 @@
 if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
-t3lib_extMgm::addUserTSConfig('
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
 	options.saveDocNew.tx_gridelements_backend_layout=1
 ');
 
-t3lib_extMgm::addPageTSConfig('
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
 	mod.wizards.newContentElement.renderMode = tabs
 ');
 
-t3lib_extMgm::addPItoST43($_EXTKEY, 'view/class.tx_gridelements_view.php', '_pi1', 'CType', 1);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPItoST43($_EXTKEY, 'Classes/Plugin/Gridelements.php', '_pi1', 'CType', 1);
 
 // register BE AJAX controller
 $TYPO3_CONF_VARS['BE']['AJAX']['tx_gridelements::controller'] =
-	t3lib_extMgm::extPath($_EXTKEY) . 'lib/class.tx_gridelements_ajax.php:tx_gridelements_ajax->init';
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/View/AjaxRecordList.php:GridElementsTeam\\Gridelements\\View\\AjaxRecordList->init';
+
+// XCLASS
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Recordlist\\RecordList\\DatabaseRecordList'] = array(
+	'className' => 'GridElementsTeam\\Gridelements\\Xclass\\DatabaseRecordList',
+);
+

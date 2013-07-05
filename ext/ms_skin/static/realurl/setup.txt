@@ -1,0 +1,6 @@
+## RealURL Setup
+config.baseURL = {$site.siteURL}
+config.tx_realurl_enable = 1
+[globalString = IENV:HTTP_HOST = sf]
+    config.tx_realurl_enable = 0
+[end]

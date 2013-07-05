@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+  <data type="array">
+    <languageKey index="default" type="array">
+      <label index="FORM_TITLE"><![CDATA[Contact Form]]></label>
+      <label index="emailSubject"><![CDATA[Contact Form]]></label>
+      <label index="FIRST_NAME"><![CDATA[First Name]]></label>
+      <label index="LAST_NAME"><![CDATA[Last Name]]></label>
+      <label index="EMAIL_ADDRESS"><![CDATA[E-mail address]]></label>
+      <label index="PHONE"><![CDATA[Phone]]></label>
+      <label index="MESSAGE"><![CDATA[Comment]]></label>
+      <label index="SEND"><![CDATA[Submit]]></label>
+      <label index="error_firstname_required"><![CDATA[required]]></label>
+      <label index="error_lastname_required"><![CDATA[required]]></label>
+      <label index="error_email_required"><![CDATA[required]]></label>
+      <label index="error_message_required"><![CDATA[required]]></label>
+      <label index="error_freecapfield_required"><![CDATA[required]]></label>
+      <label index="error_freecapfield"><![CDATA[wrong code]]></label>
+    </languageKey>
+    <languageKey index="de" type="array">
+      <label index="FORM_TITLE"><![CDATA[Kontaktformular]]></label>
+      <label index="emailSubject"><![CDATA[Contact Form]]></label>
+      <label index="FIRST_NAME"><![CDATA[Name]]></label>
+      <label index="LAST_NAME"><![CDATA[Vorname]]></label>
+      <label index="EMAIL_ADDRESS"><![CDATA[E-Mail-Adresse]]></label>
+      <label index="PHONE"><![CDATA[Telefonnummer]]></label>
+      <label index="MESSAGE"><![CDATA[Ihre Nachricht]]></label>
+      <label index="SEND"><![CDATA[Absenden]]></label>
+      <label index="error_firstname_required"><![CDATA[required]]></label>
+      <label index="error_lastname_required"><![CDATA[required]]></label>
+      <label index="error_email_required"><![CDATA[required]]></label>
+      <label index="error_message_required"><![CDATA[required]]></label>
+      <label index="error_freecapfield_required"><![CDATA[required]]></label>
+      <label index="error_freecapfield"><![CDATA[wrong code]]></label>
+    </languageKey>
+  </data>
+</T3locallang>

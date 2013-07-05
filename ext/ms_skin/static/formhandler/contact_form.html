@@ -1,0 +1,114 @@
+<!-- ###TEMPLATE_FORM1### begin -->
+<div id="contactForm">
+  <h2>###LLL:FORM_TITLE###</h2>
+  <div class="form-wrapper">
+    <form action="###REL_URL###" name="contactForm" method="post" novalidate="novalidate">
+
+
+      <div class="control-group">
+        <label class="control-label">###LLL:FIRST_NAME###*</label>
+        <div class="controls">
+          <input type="text" minlength="2" name="fh[firstname]" value="###value_firstname###" required="required">
+          <div class="error">###error_firstname###</div>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">###LLL:LAST_NAME###*</label>
+        <div class="controls">
+          <input type="text" minlength="2" name="fh[lastname]" value="###value_lastname###" required="required">
+          <div class="error">###error_lastname###</div>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">###LLL:EMAIL_ADDRESS###*</label>
+        <div class="controls">
+          <input name="fh[email]" type="email"  class="h5-email" value="###value_email###" required="required">
+          <div class="error">###error_email###</div>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">###LLL:PHONE###</label>
+        <div class="controls">
+          <input type="text" class="h5-phone" name="fh[phone]" value="###value_phone###">
+          <div class="error">###error_phone###</div>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">###LLL:MESSAGE###*</label>
+        <div class="controls">
+          <textarea name="fh[message]" required="required">###value_message###</textarea>
+          <div class="error">###error_message###</div>
+        </div>
+      </div>
+
+      <!--###CAPTCHA_INSERT### this subpart is removed if CAPTCHA is not enabled! -->
+      <div  class="control-group captcha">
+
+        <label for="freecapfield1" class="control-label">###SR_FREECAP_NOTICE###</label>
+        <div class="controls">
+          ###SR_FREECAP_IMAGE###
+          <input required="required" class="freecap" type="text" size="15" id="freecapfield" name="fh[freecapfield]" title="###SR_FREECAP_NOTICE###" value="">
+          <div class="error">###error_freecapfield_required### ###error_freecapfield###</div>
+        </div>
+      </div>
+      <!--###CAPTCHA_INSERT###-->
+
+
+      ###validation-status###
+      <div class="control-group">
+        <div class="wrapper-submit">
+          <input ###validation-status###  type="submit" ###submit_nextStep### value="###LLL:SEND###">
+        </div>
+      </div>
+
+    </form>
+  </div><!--form-wrapper-->
+</div>
+<!-- ###TEMPLATE_FORM1### end -->
+
+<!-- ###master_spamprotection-jm_recaptcha### -->
+<div class="type-text">
+  ###error_recaptcha_response_field###
+  <label>###LLL:captcha### *</label>
+  <div class="recaptcha">
+    ###RECAPTCHA###
+  </div>
+</div>
+<!-- ###master_spamprotection-jm_recaptcha### -->
+
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_PLAIN### begin -->
+###LLL:FORM_TITLE###
+
+###LLL:FIRST_NAME###: ###value_firstname###
+###LLL:LAST_NAME###: ###value_lastname###
+###LLL:EMAIL_ADDRESS###: ###value_email###
+<!-- ###ISSET_message### begin -->
+###LLL:PHONE###: ###value_phone###
+<!-- ###ISSET_telefon_1### end -->
+###LLL:MESSAGE###: ###value_message###
+<!-- ###TEMPLATE_EMAIL_ADMIN_PLAIN### end -->
+
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_HTML### begin -->
+###LLL:FORM_TITLE###<br>
+<br>
+###LLL:FIRST_NAME###: ###value_firstname###<br>
+###LLL:LAST_NAME###: ###value_lastname###<br>
+###LLL:EMAIL_ADDRESS###: ###value_email###<br>
+<!-- ###ISSET_message### begin -->
+###LLL:PHONE###: ###value_phone###<br>
+<!-- ###ISSET_telefon_1### end -->
+###LLL:MESSAGE###: ###value_message###<br>
+<!-- ###TEMPLATE_EMAIL_ADMIN_HTML### end -->
+
+
+
+<!-- ###TEMPLATE_SUBMITTEDOK### begin -->
+<div class="form-page">
+  <h3>###LLL:TITLE_H3###</h3>
+  <h2>###LLL:TITLE_H2###</h2>
+  <p>###LLL:GENERAL_INQUIRY_RESPONSE###
+  </p>
+</div>
+<!-- ###TEMPLATE_SUBMITTEDOK### end -->

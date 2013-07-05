@@ -13,6 +13,7 @@ $url_path = @$_SERVER['PATH_INFO'];
 if (!empty($url_path)){
 	$tmpl_name = sprintf('%s.html', substr($url_path, 1));
 }
+#$tmpl_name = 'concept.html';
 
 $loader = new Twig_Loader_Filesystem($tmpl_folder);
 
@@ -26,6 +27,10 @@ if(!file_exists($tmpl_folder . '/' . $tmpl_name)){
 	$template = $twig->loadTemplate($tmpl_name);
 }
 
-echo $template->render(array());
+$baseUrl = '/';
+if($_SERVER['HTTP_HOST'] == 'sf')
+  $baseUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+echo $template->render(array('baseUrl' => $baseUrl));
 
 ?>
