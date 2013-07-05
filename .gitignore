@@ -5,3 +5,7 @@ npm-debug.log
 .sass-cache
 .DS_store
 node_modules
+ENABLE_INSTALL_TOOL
+extTables.php
+l10n
+LocalConfiguration.php
