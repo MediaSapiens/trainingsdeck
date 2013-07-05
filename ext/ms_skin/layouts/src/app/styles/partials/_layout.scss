@@ -1,6 +1,7 @@
 body{
   background: #ececec;
   font: 12px Calibri, Arial, Helvetica, sans-serif;
+  color: #87888a;
 }
 
 .wrapper{
@@ -195,7 +196,7 @@ header{
   }
 }
 
-.content{padding: 0 40px}
+.content{padding: 0 40px 40px}
 
 .title-post{
   overflow: hidden;
@@ -224,7 +225,6 @@ header{
 }
 .box-holder{
   overflow: hidden;
-  padding: 0 0 40px;
 
   a{
     color: #b1b3b4;
@@ -283,6 +283,10 @@ header{
 
   a{
     color: #b1b3b4;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   p{
@@ -386,10 +390,46 @@ header{
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: bold;
+  a{
+    color: #87888a;
+  }
   li{
-    padding: 2px;
+    padding: 0 5px 0 10px;
   }
 }
 .csc-textpic{
+  padding: 0 0 20px;
 
+  .csc-textpic-imagewrap{
+    margin: 0 20px 0 0;
+    font-size: 13px;
+    line-height: 17px;
+    color: #87888a;
+
+  }
+}
+.form-wrapper{
+  label{
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+  }
+  .control-group{
+    padding: 0 0 15px;
+  }
+  input[type="text"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 12px;
+  }
+  .controls{
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
