@@ -32,7 +32,7 @@ plugin.Tx_Formhandler.settings.predef.contactForm {
         message.errorCheck.1 = required
 
         freecapfield.errorCheck.1 = required
-        freecapfield.errorCheck.1 = captcha
+        freecapfield.errorCheck.2 = srFreecap
       }
     }
   }
