@@ -43,11 +43,12 @@
 
       <!--###CAPTCHA_INSERT### this subpart is removed if CAPTCHA is not enabled! -->
       <div  class="control-group captcha">
-
         <label for="freecapfield1" class="control-label">###SR_FREECAP_NOTICE###</label>
         <div class="controls">
           ###SR_FREECAP_IMAGE###
+          <div class="captcha-input">
           <input required="required" class="freecap" type="text" size="15" id="freecapfield" name="fh[freecapfield]" title="###SR_FREECAP_NOTICE###" value="">
+          </div>
           <div class="error">###error_freecapfield_required### ###error_freecapfield###</div>
         </div>
       </div>
