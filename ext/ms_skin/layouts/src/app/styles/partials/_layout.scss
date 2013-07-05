@@ -226,6 +226,10 @@ header{
   overflow: hidden;
   padding: 0 0 40px;
 
+  a{
+    color: #b1b3b4;
+  }
+
   .holder{width: 880px}
 
   .heading{
@@ -276,6 +280,10 @@ header{
   text-transform: uppercase;
   padding: 19px 38px 20px;
 
+  a{
+    color: #b1b3b4;
+  }
+
   p{
     float:right;
     margin: 0;
@@ -321,28 +329,28 @@ header{
     margin: 0 21px 0 0;
     padding: 3px 0 15px 0;
     border-right: 1px solid #b1b3b4;
-  }
 
-  .navigation{
-    font-size: 12px;
-    line-height: 16px;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    ul{
+      font-size: 12px;
+      line-height: 16px;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+      list-style: none;
 
-    li{
-      position: static;
-      padding: 0 18px 0 0;
+      li{
+        position: static;
+        padding: 0 18px 0 0;
 
-      a{
-        color: #b1b3b4;
-        text-decoration: none;
-        &:hover{color: #20912e}
-      }
+        a{
+          color: #b1b3b4;
+          text-decoration: none;
+          &:hover{color: #20912e}
+        }
 
-      &.active{
-        a{color: #20912e}
+        &.active{
+          a{color: #20912e}
+        }
       }
     }
   }
@@ -372,4 +380,12 @@ header{
   }
 
   p{margin: 0 0 33px}
+}
+.csc-sitemap ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    padding: 2px;
+  }
 }
