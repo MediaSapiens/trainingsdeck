@@ -420,6 +420,7 @@ header{
   .control-group{
     padding: 0 0 15px;
   }
+  input[type="email"],
   input[type="text"] {
     margin: 0;
     padding: 0;
@@ -428,8 +429,27 @@ header{
     width: 300px;
     font-size: 12px;
   }
+  textarea{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 12px;
+    overflow: auto;
+  }
   .controls{
     display: inline-block;
     vertical-align: middle;
+  }
+  .captcha-input{
+    width: 100%;
+    overflow: hidden;
+  }
+  .captcha{
+    label{
+      display: block;
+      width: auto;
+    }
   }
 }
