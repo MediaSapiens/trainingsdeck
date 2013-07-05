@@ -403,11 +403,33 @@ header{
 .csc-textpic{
   padding: 0 0 20px;
 
-  csc-textpic-imagewrap{
+  .csc-textpic-imagewrap{
     margin: 0 20px 0 0;
     font-size: 13px;
     line-height: 17px;
     color: #87888a;
 
+  }
+}
+.form-wrapper{
+  label{
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+  }
+  .control-group{
+    padding: 0 0 15px;
+  }
+  input[type="text"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 12px;
+  }
+  .controls{
+    display: inline-block;
+    vertical-align: middle;
   }
 }

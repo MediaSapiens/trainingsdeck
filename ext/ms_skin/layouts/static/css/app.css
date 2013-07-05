@@ -502,8 +502,29 @@ header {
 .csc-textpic {
   padding: 0 0 20px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/ext\/ms_skin\/layouts\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003406}}
-  .csc-textpic csc-textpic-imagewrap {
+  .csc-textpic .csc-textpic-imagewrap {
     margin: 0 20px 0 0;
     font-size: 13px;
     line-height: 17px;
     color: #87888a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/ext\/ms_skin\/layouts\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003415}}
+.form-wrapper label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 120px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/ext\/ms_skin\/layouts\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003420}}
+.form-wrapper .control-group {
+  padding: 0 0 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/ext\/ms_skin\/layouts\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003423}}
+.form-wrapper input[type="text"] {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 1px solid #ccc;
+  width: 300px;
+  font-size: 12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/madeira\/Development\/trainingsdeck\/ext\/ms_skin\/layouts\/src\/app\/styles\/partials\/_layout\.scss}line{font-family:\00003431}}
+.form-wrapper .controls {
+  display: inline-block;
+  vertical-align: middle; }
