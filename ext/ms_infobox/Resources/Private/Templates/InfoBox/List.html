@@ -10,7 +10,7 @@
   <f:for each="{infoBoxes}" as="infoBox">
     <div class="box">
       <div class="heading">
-        <a href="<a href="<hotelHelper:linkWrapper
+        <a href="<hotelHelper:linkWrapper
           TYPO3Link="{infoBox.link}"
           arguments="{isLinkUrl:'true',  linkTitle:'{infoBox.title}'}"
           />"><h2>{infoBox.title}</h2></a>
@@ -25,16 +25,6 @@
         />"><f:format.html>{infoBox.description}</f:format.html></a></div>
     </div>
 
-
-
-    <!--<tr>
-      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> </f:link.action></td>
-      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> {infoBox.image}</f:link.action></td>
-      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> {infoBox.description}</f:link.action></td>
-      <td><f:link.action action="show" arguments="{infoBox : infoBox}"> {infoBox.link}</f:link.action></td>
-      <td><f:link.action action="edit" arguments="{infoBox : infoBox}">Edit</f:link.action></td>
-      <td><f:link.action action="delete" arguments="{infoBox : infoBox}">Delete</f:link.action></td>
-    </tr>-->
   </f:for>
 
 </f:section>
