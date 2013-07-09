@@ -329,7 +329,7 @@ tt_content.gridelements_pi1.20.10.setup {
            required=1
            file.import=uploads/tx_gridelements/
            file.import.data = field:flexform_image
-           file.width = 808
+           file.width = 798
           }
           20 = TEXT
           20 {
