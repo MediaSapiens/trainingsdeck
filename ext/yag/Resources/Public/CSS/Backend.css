@@ -1,0 +1,432 @@
+/*
+* MISC
+*/
+
+h1 {
+	text-align: left;
+}
+
+a { 
+	color: #555;
+	font-weight: bold; 
+	text-decoration: none; 
+	line-height: 1.5em; 
+}
+
+a:hover {text-decoration: none }
+
+.ui-accordion .ui-accordion-header {
+	padding-left: 25px;
+}
+
+/*
+* Backend List
+*/
+
+.yag-list dt {
+	float:left;
+	width:100px;
+}
+
+td.yag-col-thumb, td.yag-col-title  {
+	width: 150px;
+}
+
+.yag-description {
+	margin: 20px 10px 0 0;	
+}
+
+/*
+* Breadcrumbs
+*/
+.tx-yag-breadcrumbcomtainer {
+	border:0;
+	margin:0;
+}
+
+/*
+* Backend forms
+*/
+.yag-fakeButton {
+    background-color: #F6F6F6;
+    background-image: -moz-linear-gradient(center top, #F6F6F6 10%, #D5D5D5 90%);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0.1, #f6f6f6), color-stop(0.9, #d5d5d5));
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    border: 1px solid #7C7C7C;
+    border-radius: 1px 1px 1px 1px;
+    color: #434343;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 3px;
+    font-size: 11px;
+    text-decoration: none !important;
+}
+
+.yag-fakeButton:hover {
+	background-color: #C8C8C8;
+	background-image: -moz-linear-gradient(center top , #F6F6F6 10%, #BDBCBC 90%);
+}
+
+.yag-buttonLine {
+	margin-top:10px;
+}
+
+.yag-button {
+	margin-right: 10px;
+}
+
+.type-checkbox label {
+    vertical-align: top;
+}
+
+.outer-field-wrapper {
+    padding: 3px 0 4px 0;
+}
+
+.pt-extbase-groupselector {
+    border: 1px solid #7C7C7C;
+    padding:5px;
+}
+
+
+
+.yag-box-lightgray {
+    margin-top: 5px; border: 1px solid #aaa;  
+    padding: 10px;
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+}
+
+.yag-box-white {
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    background: none repeat scroll 0 0 white;
+    padding: 10px;
+    color: #333333;
+}
+
+.yag-batch-editfields input, .yag-batch-editfields .tx-yag-image-admin-edit-properties, .yag-batch-editfields textarea {
+    width:330px;
+}
+
+/*
+* extList
+*/
+
+/* Pager */
+.tx-ptextlist-pager-wrapper {
+    border-top: 1px solid #909090;
+    margin-top: 20px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.tx-ptextlist-pager {
+    margin-left: 0;
+    text-align: center;
+}
+
+.tx-ptextlist-pager li {
+    display: inline;
+}
+
+.tx-ptextlist-pager li.number a, .tx-ptextlist-pager li a span, .tx-ptextlist-pager li.number .cur, .tx-ptextlist-pager li.number .fill{
+    background: url("../Images/b-pager.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #BFBFBF;
+    color: #000000;
+    display: inline-block;
+    font-size: 11px;
+    height: 23px;
+    width: 24px;
+    line-height: 23px;
+    margin-right: 6px;
+    padding: 0;
+    text-align: center;
+}
+
+.tx-ptextlist-pager li.number a:hover, .tx-ptextlist-pager li a:hover span, .tx-ptextlist-pager li a:hover {
+    color: #FF8700;
+    text-decoration: none;
+}
+
+.tx-ptextlist-pager li.number .fill {
+    color: #BFBFBF;
+}
+
+.tx-ptextlist-pager li.number .cur {
+    border: 1px solid #393939;
+}
+
+.tx-ptextlist-pager li a {
+    text-decoration: none;
+}
+
+
+.tx-ptextlist-pager-item-display {
+    color: #393939;
+    padding-top:10px;
+}
+
+.tx-ptextlist-pager-item-display .first, .tx-ptextlist-pager-item-display .last, .tx-ptextlist-pager-item-display .count {
+    color: #707070;
+}
+
+
+
+
+/*
+* Flexform item selctors
+*/
+#imageGallerySelector .ui-selecting, #imageAlbumSelector .ui-selecting, #imageImageSelector .ui-selecting,
+#albumGallerySelector .ui-selecting, #albumAlbumSelector .ui-selecting,
+#galleryGallerySelector .ui-selecting { 
+	background: #FECA40; 
+}
+
+#imageGallerySelector .ui-selected, #imageAlbumSelector .ui-selected, #imageImageSelector .ui-selected,
+#albumGallerySelector .ui-selected, #albumAlbumSelector .ui-selected,
+#pageSelectorBox .ui-selected,
+#galleryGallerySelector .ui-selected  { 
+	background: #F39814; color: white; 
+}
+
+#imageGallerySelector, #imageAlbumSelector, #imageImageSelector,
+#albumGallerySelector, #albumAlbumSelector,
+#galleryGallerySelector { 
+	list-style-type: none; margin: 0; padding: 0; 
+}
+
+.inactiveSelectorBox {
+	width:250px;
+	height:300px; 
+	border:1px solid gray; 
+	background: #C0C0C0; 
+	float:left; 
+	padding:3px;
+	color: gray;
+}
+
+.itemSelectorBox {
+	width:250px;
+	height:300px; 
+	border:1px solid gray; 
+	background: white; 
+	padding:3px; 
+	float:left;
+	overflow:auto;
+}
+
+.pageSelectorBox {
+	width:100px;
+	height:300px;
+	border:1px solid gray;
+	background: white;
+	padding:3px;
+	float:left;
+	overflow:auto;
+}
+
+.selectorBoxSeparator {
+	width:20px; 
+	float:left; 
+	padding:142px 3px 0 3px;
+}
+
+.selectorBoxBusy{
+	background:  #d5d5d5 url('../../../../../../typo3/sysext/t3skin/images/spinner/d5d5d5.gif') no-repeat;
+	background-position: center;
+}
+
+/**
+* Gallery Maintenance
+*/
+#yagRfcBuilder {
+	margin-top: 20px;
+	border: 1px solid #dadada;
+	background-color: #ebebeb;
+	display: none;
+}
+
+#yagRfcProgressbar, #yagRfcCancel {
+	margin: 5px;
+}
+	
+#yagRfcStatus {
+	margin: 3px;
+}
+
+#yagRfcImageLine {
+	height: 49px;
+	border: 1px solid #dadada;
+	overflow: hidden;
+	margin:5px;
+	background-color: #f8f8f8;
+	padding:1px;
+}
+
+#yagRfcImageLine img {
+	padding-right:2px;
+}
+
+#yagRfcInfo {
+	margin-top: 20px;
+}
+
+
+.tx-yag-transparency-half {
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+
+.tx-yag-image-admin-edit-properties {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #CCCCCC;
+    padding:  5px;
+    color: #333;
+    font-size: 80%;
+}
+
+table.typo3-dblist tr.tx-yag-album-index-album td{
+    background-color: #FFFFDD !important;
+}
+
+.tx-yag-image-admin-sortingbox {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #CCCCCC;
+    padding:  5px;
+    color: #333;
+    margin: 0 0 7px 0;
+}
+
+
+
+/**
+*
+* Drag n' Drop Upload
+*
+*/
+
+
+/*-------------------------
+	Dropbox Element
+--------------------------*/
+
+
+
+#yag-dropbox{
+    background:url('../Images/DragNDrop/background_tile_3.jpg');
+
+    border-radius:3px;
+    position: relative;
+    min-height: 290px;
+    overflow: hidden;
+    padding-bottom: 40px;
+
+    box-shadow:0 0 2px rgba(0,0,0,0.3) inset,0 -3px 2px rgba(0,0,0,0.1);
+}
+
+
+#yag-dropbox .yag-dropbox-message{
+    font-size: 1.4em;
+    text-align: center;
+    padding-top:160px;
+    display: block;
+    color: white;
+}
+
+#yag-dropbox .yag-dropbox-message i{
+    color:#ccc;
+    font-size:10px;
+}
+
+#yag-dropbox:before{
+    border-radius:3px 3px 0 0;
+}
+
+
+
+/*-------------------------
+	Image Previews
+--------------------------*/
+
+
+
+#yag-dropbox .preview{
+    width:245px;
+    height: 215px;
+    float:left;
+    margin: 55px 0 0 60px;
+    position: relative;
+    text-align: center;
+}
+
+#yag-dropbox .preview img{
+    max-width: 240px;
+    max-height:180px;
+    border:3px solid #fff;
+    display: block;
+
+    box-shadow:0 0 2px #000;
+}
+
+#yag-dropbox .imageHolder{
+    display: inline-block;
+    position:relative;
+}
+
+#yag-dropbox .uploaded{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: url('../Images/DragNDrop/done.png') no-repeat center center rgba(255,255,255,0.5);
+    display: none;
+}
+
+#yag-dropbox .preview.done .uploaded{
+    display: block;
+}
+
+
+
+/*-------------------------
+	Progress Bars
+--------------------------*/
+
+
+
+#yag-dropbox .progressHolder{
+    position: absolute;
+    background-color:#252f38;
+    height:12px;
+    width:100%;
+    left:0;
+    bottom: 0;
+
+    box-shadow:0 0 2px #000;
+}
+
+#yag-dropbox .progress{
+    background-color:#2586d0;
+    position: absolute;
+    height:100%;
+    left:0;
+    width:0;
+
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset;
+
+    -moz-transition:0.25s;
+    -webkit-transition:0.25s;
+    -o-transition:0.25s;
+    transition:0.25s;
+}
+
+#yag-dropbox .preview.done .progress{
+    width:100% !important;
+}

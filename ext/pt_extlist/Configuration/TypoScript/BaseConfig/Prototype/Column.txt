@@ -1,0 +1,103 @@
+####################################################
+# Definition of column prototypes for use in listconfiguration
+#
+# @author Daniel Lienert <lienert@punkt.de> Michael Knoll <knoll@punkt.de>
+# @package Typo3
+# @subpackage pt_extlist
+####################################################
+
+plugin.tx_ptextlist.prototype.column {
+
+	default {
+		sortingImageDefault = EXT:pt_extlist/Resources/Public/List/icon_table_sort_default.png
+		sortingImageAsc = EXT:pt_extlist/Resources/Public/List/icon_table_sort_asc.png
+		sortingImageDesc = EXT:pt_extlist/Resources/Public/List/icon_table_sort_desc.png
+
+		isSortable = 1
+		isVisible = 1
+		columnIdentifier =
+		fieldIdentifier =
+		label =
+		sorting =
+		rawFields = 0
+		cacheRendering = 0
+
+		#renderUserFunction =
+		#renderObj =
+		#renderTemplate =
+		#headerThCssClass =
+
+		// additional class for each cell, can be rendered with renderObj and renderUserFunction
+		#cellCSSClass =
+	}
+
+
+	# This prototype adds excel eport styling to the column settings
+	excel < .default
+    excel {
+		excelExport {
+
+			# width = 20
+
+			body {
+				wrapText = 1
+				vertical = top
+				shrinkToFit = 1
+
+				border {
+					style = thin
+					color = aaaaaa
+				}
+
+				borders {
+					bottom < plugin.tx_ptextlist.prototype.column.excel.excelExport.body.border
+					left < plugin.tx_ptextlist.prototype.column.excel.excelExport.body.border
+					top < plugin.tx_ptextlist.prototype.column.excel.excelExport.body.border
+					right < plugin.tx_ptextlist.prototype.column.excel.excelExport.body.border
+				}
+			}
+
+
+			header {
+				wrapText = 0
+            	vertical = top
+				shrinkToFit = 0
+
+				border {
+					style = thin
+					color = 1006A3
+				}
+
+				borders {
+					bottom < plugin.tx_ptextlist.prototype.column.excel.excelExport.header.border
+					left < plugin.tx_ptextlist.prototype.column.excel.excelExport.header.border
+					top < plugin.tx_ptextlist.prototype.column.excel.excelExport.header.border
+					right < plugin.tx_ptextlist.prototype.column.excel.excelExport.header.border
+				}
+
+				font {
+					bold = 1
+				}
+
+				fill {
+					type = solid
+					color = c8c8c8
+				}
+			}
+
+
+			aggregate {
+				font {
+					bold = 1
+				}
+
+				borders {
+					top {
+						style = thin
+                        color = 000000
+					}
+				}
+			}
+		}
+    }
+}

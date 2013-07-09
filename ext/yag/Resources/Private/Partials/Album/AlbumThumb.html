@@ -1,0 +1,44 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+
+<extlist:comment>
+<!--  
+Template for rendering an album thumb
+
+Here is a list of objects / variables that can be accessed in this template:
+
+Tx_Yag_Domain_Model_Album album               The album object
+
+@package YAG
+@author Michael Knoll <mimi@kaktusteam.de>
+@author Daniel Lienert <daniel@lienert.cc>
+-->
+</extlist:comment>
+
+
+<div class="tx-yag-thumb-innerframe tx-yag-album-thumb-innerframe">
+	<yag:link.album album="{album}">
+		<f:if condition="{album.itemCount} > 0">
+		    <f:then>
+		        <yag:image item="{album.thumb}" resolutionName="albumThumb" />
+		    </f:then>
+		    <f:else>
+		        <div><f:translate key="tx_yag_controller_album.noItems" /></div>
+		    </f:else>
+	    </f:if>
+	</yag:link.album>
+</div>
+
+<div class="tx-yag-gallery-albuminfo" id="albumUid-{album.uid}" style="position: relative">
+    <yag:link.album album="{album}">
+        <div class="tx-yag-gallery-albumcaption">
+            {album.name}
+        </div>
+    </yag:link.album>
+	<div class="tx-yag-gallery-itemcount">
+		{album.itemCount} <f:if condition="{1:album.itemCount} == {1:1}"><f:then><f:translate key="tx_yag_general.image" /></f:then><f:else><f:translate key="tx_yag_general.images" /></f:else></f:if>
+	</div>
+		<div class="tx-yag-gallery-albumdescription">
+		<f:format.nl2br>{album.description}</f:format.nl2br>
+	</div>
+</div>

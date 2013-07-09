@@ -1,0 +1,46 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+
+<div class="outer-wrapper">
+	<label for="tx-yag-gallery-name" >
+		<f:translate key="tx_yag_domain_model_gallery.name" default="Name" /> <span class="required"><f:translate key="tx_yag_general.required" default="(required)"/></span>
+	</label>
+	<div class="outer-field-wrapper">
+		<div class="field-wrapper type-text">
+			 <f:form.textfield property="name" id="tx-yag-gallery-name"/>
+		</div>
+	</div>
+</div>
+
+<div class="outer-wrapper">
+	<label for="tx-yag-gallery-description" >
+		<f:translate key="tx_yag_domain_model_gallery.description" />
+	</label>
+	<div class="outer-field-wrapper">
+		<div class="field-wrapper type-text">
+			 <f:form.textarea property="description" rows="8" cols="46" id="tx-yag-gallery-description"/>
+		</div>
+	</div>
+</div>
+
+<div class="outer-wrapper">
+	<label for="tx-yag-gallery-date" >
+		<f:translate key="tx_yag_domain_model_gallery.date" />
+	</label>
+	<div class="outer-field-wrapper">
+		<div class="field-wrapper type-text">
+			<f:form.textfield name="date[date]" value="{f:format.date(date:gallery.date)}" id="tx-yag-gallery-date"/>
+			<f:form.hidden name="date[dateFormat]" value="Y-m-d"/>
+		</div>
+	</div>
+</div>
+
+<div class="outer-wrapper">
+	<label for="tx-yag-gallery-hide" >
+		<f:translate key="tx_yag_domain_model_gallery.hide" />
+	</label>
+	<div class="outer-field-wrapper">
+		<div class="field-wrapper type-text">
+			 <f:form.checkbox property="hide" value="1" checked="{gallery.hide}" id="tx-yag-gallery-hide"/>
+		</div>
+	</div>
+</div>

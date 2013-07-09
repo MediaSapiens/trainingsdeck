@@ -1,0 +1,52 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+
+<extlist:comment>
+<!--  
+Template for rendering single item
+
+Here is a list of objects / variables that can be accessed in this template:
+
+Tx_Yag_Domain_Model_Item mainItem              Item to be rendered
+
+@package YAG
+@author Michael Knoll <mimi@kaktusteam.de>
+@author Daniel Lienert <daniel@lienert.cc>
+-->
+</extlist:comment>
+
+<div class="tx-yag-singleview">
+	<div class="tx-yag-image">
+        <yag:image item="{item}" resolutionName="medium" />
+	</div>
+	
+	<f:if condition='{config.settings.item.showTitle}'>
+		<div class="tx_yag-single-title">
+			{item.title}
+		</div>
+	</f:if>		
+
+	<f:if condition='{config.settings.item.showDescription}'>
+		<div class="tx_yag-single-description">
+			{item.description}
+		</div>
+	</f:if>
+
+    <f:for each="{config.settings.item.interaction}" as="partial">
+        <f:if condition="{partial.show}">
+            <f:render partial="{partial.path}" arguments="{item: item, pager:pager, config:config, settings:partial.settings}" />
+        </f:if>
+    </f:for>
+	
+	<f:if condition='{config.settings.item.showItemMeta}'>
+		<f:render partial="{config.itemConfig.itemMetaPartial}" arguments="{mainItem: item}" />
+	</f:if>
+   
+	<f:if condition='{config.settings.item.showOriginalDownloadLink}'>
+		<div class="tx-yag-single-download">
+            <f:link.action controller="Item" action="download" arguments="{item: item, fileHash: '{item.fileHash->f:format.crop(maxCharacters: 5, append: \'\')}'}"><f:translate key="tx_yag_controller_item.downloadOrig" default="" /> ({item.width} x {item.height})</f:link.action>
+        </div>
+	</f:if>
+</div>
+
+<f:section name="feEdit"></f:section>

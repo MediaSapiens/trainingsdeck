@@ -1,0 +1,46 @@
+{namespace ptextbase=Tx_PtExtbase_ViewHelpers}
+<extlist:comment>
+<!--  
+Template for rendering form for creating a new gallery
+
+Here is a list of objects / variables that can be accessed in this template:
+
+Tx_Yag_Domain_Model_Gallery gallery      New gallery object that is re-passed if there are any validation errors
+
+
+@package YAG
+@author Michael Knoll <mimi@kaktusteam.de>
+@author Daniel Lienert <daniel@lienert.cc>
+-->
+</extlist:comment>
+
+<f:layout name="Default" />
+<f:section name="main">
+
+	<h1><f:translate key="tx_yag_controller_gallery.addGallery" /></h1>
+	<p class="bodytext"><f:translate key="gallery.new.infotext" /></p>
+	
+	<f:render partial="FormErrors" arguments="{for: 'gallery'}" />
+	<f:form method="post" controller="Gallery" action="create" name="gallery" object="{gallery}">
+	
+	    <f:render partial="Gallery/FormFields" arguments="{gallery:gallery}" />
+	    
+	    <div class="yag-buttonLine">
+            <span class="yag-button">
+                <f:form.submit class="submit btn btn-primary" value="{f:translate(key: 'tx_yag_general.save', default: 'Save')}" />
+            </span>
+		    	<f:link.action action="list" class="yag-fakeButton">
+		    		<span class="yag-button btn">
+						<f:translate key="tx_yag_general.cancel"/>
+					</span>
+		    	</f:link.action>
+    	</div>
+	</f:form>
+	
+</f:section>
+
+<f:section name="beButtonsLeft">
+	<ptextbase:be.buttons.icon uri="{f:uri.action(action: 'list')}"/>
+</f:section>
+
+<f:section name="feEdit"></f:section>

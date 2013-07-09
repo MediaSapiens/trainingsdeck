@@ -1,0 +1,35 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+{namespace rbac=Tx_Rbac_ViewHelpers}
+
+<extlist:comment>
+<!--  
+Partial for rendering import form for multifile importer
+
+Here is a list of objects / variables that can be accessed in this template:
+
+Tx_Yag_Domain_Model_Album album               The album object
+
+@package YAG
+@author Daniel Lienert <lienert@punkt.de>
+-->
+</extlist:comment>
+
+<div id="content">
+
+    <h2><f:translate key="tx_yag_swfupload.header" /></h2>
+
+    <form>
+        <div id="queue"></div>
+        <input id="file_upload" name="file_upload" type="file" multiple="true">
+    </form>
+
+    <yag:Javascript.Template templatePath="EXT:yag/Resources/Private/JSTemplates/SWFUpload.js"
+                             position="current"
+                             arguments="{albumUid : album.uid,
+						 			file_size_limit : settings.upload.multiFile.file_size_limit,
+						 			file_upload_limit : settings.upload.multiFile.file_upload_limit,
+						 			uploadURL : '{f:uri.action(controller:\'FileUpload\', action:\'upload\', absolute:1)}'
+						 			swfURL: '{f:uri.resource(path:\'Uploadify/uploadify.swf\')}'}" />
+
+</div>

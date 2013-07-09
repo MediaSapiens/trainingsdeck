@@ -1,0 +1,32 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+
+<extlist:comment>
+<!--  
+Default Layout
+
+Here is a list of objects / variables that can be accessed in this template:
+
+
+@package YAG
+@author Michael Knoll <mimi@kaktusteam.de>
+@author Daniel Lienert <daniel@lienert.cc>
+-->
+</extlist:comment>
+
+<div id="yag-error-messagecontainer">
+    <f:flashMessages class="tx-extbase-flash-message" renderMode='div'/>
+</div>
+
+<div class="tx-yag-pi1 theme-{config.theme}">
+	
+	<f:if condition="{config.themeConfiguration.showBreadcrumbs}">
+		<yag:breadcrumbs />
+	</f:if>
+
+    <f:render section="head" optional="TRUE" />
+	<f:render section="main" />
+	<f:render section="feEdit" optional="TRUE" />
+</div>
+
+<div style="clear:both;">&nbsp;</div>
