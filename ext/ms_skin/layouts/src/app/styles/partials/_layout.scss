@@ -90,6 +90,7 @@ header{
       > a{
         display: inline-block;
         box-sizing: border-box;
+        -moz-box-sizing:border-box;
         vertical-align: middle;
         background: #b1b3b4;
         width: 100%;
@@ -124,6 +125,7 @@ header{
       font-size: 12px;
       line-height: 16px;
       box-sizing: border-box;
+      -moz-box-sizing:border-box;
 
       li{
         float: left;
@@ -150,6 +152,7 @@ header{
     width: 232px;
     padding: 18px 20px 0;
     box-sizing: border-box;
+    -moz-box-sizing:border-box;
     right: 0;
     top: 0;
     position: absolute;
