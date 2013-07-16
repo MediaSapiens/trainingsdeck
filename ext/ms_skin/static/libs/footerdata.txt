@@ -1,6 +1,6 @@
 #page.includeJSFooter {
 page.includeJS  {
-   #vendorJS = {$skin_path}layouts/static/js/vendor.js
-   jQueryJS = {$skin_path}layouts/static/js/jquery-1.9.1.min.js
+   vendorJS = {$skin_path}layouts/static/js/vendor.js
+   #jQueryJS = {$skin_path}layouts/static/js/jquery-1.9.1.min.js
    #migrateJS = {$skin_path}layouts/static/js/migrate.js
 }
