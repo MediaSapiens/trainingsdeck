@@ -61,16 +61,18 @@ header{
     padding: 0;
     list-style: none;
     position: relative;
+    display: table;
 
     > li{
-      float: left;
       text-transform: uppercase;
       text-align: center;
       font-size: 14px;
       line-height: 18px;
       margin: 0 4px 0 0;
       min-width: 97px;
-      padding: 36px 0 4px;
+      padding: 36px 3px 4px;
+      display: table-cell;
+      vertical-align: bottom;
 
       &:last-child{margin: 0}
       &.active,
