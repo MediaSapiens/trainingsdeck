@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+div.tx-yag-theme-perfectlightbox-imagecontainer:after {
+    content: "."; 
+    display: block; 
+    height: 0;
+    clear: both; 
+    visibility: hidden;
+}
+
+div.tx-yag-theme-perfectlightbox-thumb {
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    margin:  30px;
+    border-color: #AAA #444 #444 #AAA;
+}
+
+div.tx-yag-theme-perfectlightbox-thumb ul {
+    display: none;	
+}
+
+div.tx-yag-theme-perfectlightbox-thumb img {
+    border: 1px solid;
+    border-color: #444 #AAA #AAA #444;
+}
+
+div.tx-yag-theme-perfectlightbox-thumb-landscape img {
+    height: 200px;
+    width: 200px;
+}

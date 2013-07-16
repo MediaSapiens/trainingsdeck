@@ -1,0 +1,64 @@
+####################################################
+# YAG theme PerfectLightbox
+#
+# @author Daniel Lienert <daniel@lienert.cc> 
+# @author Michael Knoll <knoll@punkt.de>
+####################################################
+
+# Include CSS for this theme
+page.includeCSS.yag_theme_perfectLightbox = EXT:yag_theme_perfectlightbox/Resources/Public/CSS/styles.css
+
+# Copy default settings from default theme
+plugin.tx_yag.settings.themes.perfectLightbox < plugin.tx_yag.settings.themes.default
+
+# Some theme-specific settings
+plugin.tx_yag.settings.themes.perfectLightbox {
+
+   # We want to have 12 items / page
+   itemList.itemsPerPage = 12
+
+   resolutionConfigs {
+      
+      # We override any existing settings for this resolution
+      thumb >
+   
+      thumb {
+         # Use this settings if you want to preserve your images' side ratios
+         # maxW = 200
+         # maxH = 200
+         
+         # Use following settings if you want to have images cropped to square
+         # Remember to change CSS settings in EXT:/yag_theme_perfectlightbox/Resources/Public/CSS/styles.css for correct rendering in frontend!
+         width = 200c
+         height = 200c
+      }
+      
+      # We override any existing settings for this resolution
+      lightbox >
+      
+      lightbox {
+         maxW = 800
+         maxH = 600
+      }
+      
+   }
+
+
+   controller {
+
+      # We override template for item list (used for rendering album view in frontend)   
+      ItemList {
+         list.template = EXT:yag_theme_perfectlightbox/Resources/Private/Templates/ItemList/List.html
+      }
+      
+   }
+
+   # We override partial used for rendering thumbs in list view
+   itemList {
+      imageThumbPartial = EXT:yag_theme_perfectlightbox/Resources/Private/Partials/ImageThumb.html
+   }
+   
+}
+
+
+module.tx_yag.settings.themes < plugin.tx_yag.settings.themes

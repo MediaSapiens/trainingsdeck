@@ -1,0 +1,28 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+
+<yag:offPageItemList type="pre">
+    <a href="{yag:resource.image(item: image, resolutionName: 'lightbox')}"
+       title="{image.title} - {image.description}"
+       rel="lightbox[lb{image.album.uid}]">
+</yag:offPageItemList>
+
+<div class="tx-yag-theme-perfectlightbox-imagecontainer">
+    <f:for each="{listData}" key="rowIndex" as="listRow">       
+        <f:render partial="{config.itemListConfig.imageThumbPartial}" 
+          arguments="{config: config, image: listRow.image.value, 
+            rowIndex: listRow.specialValues.absoluteRowIndex, 
+            pager: pager, pagerCollection:pagerCollection}" />
+    </f:for>    
+</div>
+
+<yag:offPageItemList type="post">
+    <a href="{yag:resource.image(item: image, resolutionName: 'lightbox')}"
+       title="{image.title} - {image.description}"
+       rel="lightbox[lb{image.album.uid}]">
+</yag:offPageItemList>
+
+<f:if condition="{config.settings.itemList.showPager}">
+    <div class="tx-yag-pager">
+        <f:render partial="{config.itemListConfig.pagerPartial}" arguments="{action: 'list', controller: 'ItemList', pager: pager, pagerCollection: pagerCollection, itemsText: '{f:translate(key:\'tx_yag_domain_model_album.items\')}'}" />
+    </div>
+</f:if>
