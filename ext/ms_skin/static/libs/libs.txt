@@ -72,6 +72,7 @@ lib.mainNavi.10{
           doNotLinkIt = 1
           wrapItemAndSub.insertData = 1
           wrapItemAndSub = <li><a href="{$site.siteURL}">|</a></li>
+          stdWrap.wrap = <span>|</span>
         }
     }
 }
@@ -89,29 +90,7 @@ lib.mainNavi.20{
       NO{
         wrapItemAndSub = <li>|</li>
         #wrapItemAndSub.insertData = 1
-        /*
-        wrapItemAndSub.insertData = 1
-        wrapItemAndSub = {$currentPID.data}|</li>
-        before.stdWrap.cObject = COA
-        before.stdWrap.cObject{
-          10 = TEXT
-          10.wrap = <li class="active">
-          10.if {
-             equals.field = uid
-             #value = 16
-             value = currentPID
-          }
-          20 = TEXT
-          20.wrap = <li class="nonactive">
-          20.if {
-             equals.field = uid
-             value = currentPID
-             negate = 1
-          }
-        }
-        */
-
-        #stdWrap.wrap = <span>|</span>
+        stdWrap.wrap = <span>|</span>
         #ATagParams = class="link"
         #ATagTitle.field = subtitle // abstract // description // title
         #doNotLinkIt = 1
@@ -144,6 +123,15 @@ lib.mainNavi.20{
     2 < lib.mainNavi.20.1
     2{
         wrap = <ul class="submenu">|</ul>
+        NO{
+          stdWrap.wrap = |
+        }
+        ACT{
+          stdWrap.wrap = |
+        }
+        CUR{
+          stdWrap.wrap = |
+        }
     }
 }
 
