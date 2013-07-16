@@ -100,6 +100,7 @@ header{
         position: relative;
         color: #fff;
         text-decoration: none;
+        min-height: 46px;
 
         &:after{
           content: '';
@@ -109,6 +110,17 @@ header{
           width: 1px;
           height: 100%;
           background: #b1b3b4;
+        }
+        &:before{
+          content: '';
+          width: 0;
+          height: 46px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        span{
+          display: inline-block;
+          vertical-align: middle;
         }
       }
     }
