@@ -35,26 +35,24 @@ plugin.tx_hypehtml5 {
 #custom
 skin_path = typo3conf/ext/ms_skin/
 
-
-
-language = de
 config{
+  language = de
   sys_language_uid = 0
   locale_all = de_DE.UTF-8
 }
 
 [globalVar = GP:L = 1]
 #[PIDinRootline = 1]
-language = en
 config{
+  language = en
   sys_language_uid = 1
   locale_all = en_EN.UTF-8
 }
 [global]
 
 [globalVar = GP:L = 2]
-language = ru
 config{
+  language = ru
   sys_language_uid = 2
   locale_all = ru_RU.UTF-8
 }
