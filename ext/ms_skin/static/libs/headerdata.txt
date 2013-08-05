@@ -12,6 +12,7 @@ page.headerData{
   10.value(
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{$skin_path}layouts/static/css/app.css">
+<link rel="stylesheet" href="http://business-widget.qype.com/css/qype_widget_small.css" />
   )
 
 
