@@ -215,7 +215,10 @@ header{
   }
 }
 
-.content{padding: 0 40px 40px}
+.content{
+  padding: 0 40px 40px;
+  overflow: hidden;
+}
 
 .title-post{
   overflow: hidden;
@@ -472,3 +475,9 @@ header{
     }
   }
 }
+// for plugins
+#facebookF{
+  float: left;
+  iframe{width: auto !important}
+}
+#qype-widget-container{float: right}
