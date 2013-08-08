@@ -1,6 +1,15 @@
 #page.includeJSFooter {
 page.includeJS  {
-   vendorJS = {$skin_path}layouts/static/js/vendor.js
+   #vendorJS = {$skin_path}layouts/static/js/vendor.js
    #jQueryJS = {$skin_path}layouts/static/js/jquery-1.9.1.min.js
+   #jQueryJS = http://code.jquery.com/jquery-1.8.3.min.js
+   #jQueryJS = typo3conf/ext/jquery-1.8.3.min.js
+
+    jQueryJS = http://code.jquery.com/jquery-1.9.1.min.js
+    JS1 = http://business-widget.qype.com/js/qype_globals.js
+    JS2 = http://business-widget.qype.com/js/date.js
+    JS3 = http://business-widget.qype.com/js/dates/de.js
+    JS4 = http://business-widget.qype.com/js/qype_widget_small.js
+
    #migrateJS = {$skin_path}layouts/static/js/migrate.js
 }
