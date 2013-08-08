@@ -200,15 +200,6 @@ header{
     width: 798px;
     margin: 0 auto 16px;
     position: relative;
-    &:after{
-      content: '';
-      position: absolute;
-      width: 820px;
-      height: 1px;
-      background: #87888a;
-      bottom: -19px;
-      left: -11px;
-    }
 
     .text-holder{
       display: inline-block;
