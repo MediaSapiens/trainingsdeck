@@ -11,7 +11,6 @@ lib.footerContent{
     <div class="pull-right">
       <div id="qype-widget-container" class="qype-widget-container" data-widget_type="mini_b2b" data-widget_size="max" data-widget_theme="white" data-review_count="2"><div class="qype-logo" id="qype-logo"><a href="http://www.qype.com/place/2734664-TRAININGSDECK-Hamburg" target="_blank"><img src="http://business-widget.qype.com/images/for_widget_wizard/qype_logo_1.png" /></a></div><div class="qype-content"><p class="place-rating" id="place-rating"></p><p>Wir sind auf Qype!</p></div></div>
     </div>
-    <div style="clear:both;">&nbsp;</div>
     <script> var PLACE_ID=2734664; var LANG="de_DE"; var CONTENT_LANG="de"; </script>
   )
 }
