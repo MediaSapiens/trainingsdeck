@@ -66,8 +66,8 @@ site{
   menuListPIDs = 25
   copyright = Trainingsdeck
   contact =
-  #siteURL = http://trainingsdeck.de/
-  siteURL = http://trainingsdeck.dev-ms.in/
+  siteURL = http://www.trainingsdeck.de/
+  #siteURL = http://trainingsdeck.dev-ms.in/
 }
 
 
